@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/main.css">
+
+    <script src="https://kit.fontawesome.com/15d878024c.js" crossorigin="anonymous"></script>
+
+    <title> Card Task </title>
+  </head>
+<body>
+ 
+  <section class="purchase-Water-wrapper" style="background-image: url('./assets/images/bubbles-bg.png');">
+    <h1 class="main-title">
+      Purchase Water
+    </h1>
+
+    <div class="purchase-cards">
+      <div class="card-wrapper" data-id="1">
+        <div class="image-conainter">
+          <img src="./assets/images/6bttls.png" alt="" class="bottles">
+        </div>
+        <div class="bottles-title">
+          <h3 class="title">6 BOTTLES PACK</h3>
+        </div>
+        <div class = "price-wrapper">
+          <h3 class = "price water-rate" data-price="2.5">$2.5 / pack</h3>
+          <h2 class = "water-total test-1"></h2>
+          <div class = "counter-wrapper">
+            <div class = "minus order-dec">
+              <i class = "minus fas fa-minus"></i>
+            </div>
+            <div class = "amount order-val">0</div>
+            <div class = "plus order-inc">
+              <i class = "plus fas fa-plus"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-wrapper popular-card box" data-id="2">
+        <div class="ribbon ribbon-top-left"><span>Best Price!</span></div>
+        <div class="image-conainter">
+          <img 
+            src="./assets/images/12bttls.png" 
+            alt="" 
+            class="bottles">
+        </div>
+        <div class="bottles-title">
+          <h3 class="title">12 BOTTLES PACK</h3>
+        </div>
+        <div class = "price-wrapper food">
+          <h3 class = "price water-rate" data-price="4.66">$4.66 / pack</h3>
+          <h2 class = "water-total test-2"></h2>
+          <div class = "counter-wrapper">
+            <div class = "minus order-dec">
+              <i class = "minus fas fa-minus"></i>
+            </div>
+            <div class = "amount order-val">0</div>
+            <div class = "plus order-inc">
+              <i class = "plus fas fa-plus"></i>
+            </div>
+          </div> 
+      </div>
+      </div>
+      <div class="card-wrapper">
+        <div class="image-conainter">
+          <img 
+            src="./assets/images/Group3.png" 
+            alt="" 
+            class="bottles">
+        </div>
+        <div class="bottles-title">
+          <h3 class="title">24 BOTTLES PACK</h3>
+        </div>
+        <div class = "price-wrapper" data-id="3">
+          <h3 class = "price water-rate" data-price="9">$9.00/ pack</h3>
+          <h2 class = "water-total test-3"></h2>
+          <div class = "counter-wrapper">
+            <div class = "minus order-dec">
+              <i class = "minus fas fa-minus"></i>
+            </div>
+            <div class = "amount order-val">0</div>
+            <div class = "plus order-inc">
+              <i class = "plus fas fa-plus"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> 
+
+  <section class="form-wrapper">
+    <div class="form-image">
+      <img src="./assets/images/image2.png" alt="" class="water-img">
+    </div>
+
+    <div class="form-container">
+      <div class="header">
+          <h2 class="form-title"> Billing Info </h2>
+      </div>
+      <form id="form" class="form" >
+        <div class="inner-form">
+          <div class="name-wrapper">
+            <div class="form-control first-name">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" class="firstName"/>
+             
+                <small></small>
+            </div>
+            <div class="form-control last-name">
+                <label for="lastName">Last Name</label>
+                <input type="text"  id="lastName" class="lastName"/>
+          
+                <small></small>
+            </div>
+          </div>
+
+          <div class="form-control">
+              <label for="username">Email</label>
+              <input type="email" id="email" class="email"/>
+        
+              <small></small>
+          </div>
+
+          <div class="bill-info-wrapper">
+            <div class="product-item template">
+              <p class="bottle-pack"></p>
+              <p class="packs-auantity">
+                Packs quantity
+              </p>
+              <p class="amount-wrapper"></p>
+            </div>
+          </div>
+
+          <div class="checkout-wrapper">
+            <h3 class="checkout-total-title">
+              Your total
+            </h3>
+            <div class="checkout-total-amount">
+              $0.00
+            </div>
+          </div>
+          <button id="clickBtn" class="submit-form" >Check Out</button>
+        </div>
+      
+      </form>
+    </div>
+  </section>
+
+    <div id="popup" class="js-pop-up">
+      <div class="popup-container">
+        <div class="popup">
+          <div class="close-popup" id="closeBtn"><a href="#">&times</a></div>
+            <div class="content-col">
+              <h3 class="title js-popup-title"></h3>
+
+              <div class="product-list">
+                <div class="product-item template">
+                  <div class="qty"></div>
+                  <div class="title"></div>
+                </div>
+              </div>
+              <p class="thank-you"> Thank you! </p>
+            </div>
+        </div>
+      </div>
+    </div>
+
+  <script src="./assets/js/app.js"></script>
+
+  </body>
+</html>
